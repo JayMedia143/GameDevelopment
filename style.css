@@ -405,4 +405,227 @@ input[type="text"] {
     background-size: contain;
     width: 250px;
   }
+
+  .vanta {
+    background-size: cover;
+    background-image: url(images/275779701_5082672221789696_551073943159228117_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  #vanta {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #content {
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  #content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    animation: slidetotop 1s linear;
+  }
+
+  #content p {
+    font-size: 14px;
+    font-weight: 400;
+    animation: slidetotop 1s linear;
+  }
+  .boy-img {
+    position: absolute;
+    left: -70px;
+    top: 250px;
+    z-index: 4;
+  }
+  .boy-img img {
+    height: 300px;
+  }
+  .girl-img {
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    z-index: 3;
+  }
+  .girl-img img {
+    height: 300px;
+  }
+  .guide-img {
+    position: absolute;
+    right: -50px;
+    top: 220px;
+    z-index: 3;
+  }
+  .guide-img img {
+    height: 300px;
+    transform: rotateY(-180deg);
+  }
+  .guide2-img {
+    position: absolute;
+    right: -70px;
+    top: 1650px;
+    z-index: 9;
+  }
+  .guide2-img img {
+    height: 250px;
+    transform: rotateY(-180deg);
+  }
+  .guide3-img {
+    position: absolute;
+    right: -130px;
+    top: 2010px;
+    z-index: 9;
+  }
+  .guide3-img img {
+    height: 160px;
+  }
+  .content234 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content2-top-ackground {
+    background-image: url(images/bg-lg-scroll-top.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+  }
+  .content2-background {
+    padding: 50px;
+    background-image: url(images/bg-lg-parchment.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 300px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+  }
+  .content3-background {
+    padding: 0px 50px;
+    background-image: url(images/bg-lg-parchment.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 300px;
+    height: 590px;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .content4-background {
+    padding: 50px 0px;
+    background-image: url(images/bg-lg-parchment.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 400px;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+  }
+  .content4-bottom-ackground {
+    background-image: url(images/bg-lg-scroll-bottom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    height: 103px;
+  }
+  .about-content2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 8px 32px 0 rgb(139, 107, 0);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 800px;
+    padding: 20px 25px;
+    margin: 0 auto;
+  }
+
+  .about-content2 h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .about-content2 img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .swiper {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #fff;
+    background: rgb(255, 239, 170);
+    box-shadow: 0 8px 32px 0 rgb(139, 107, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    position: relative;
+  }
+  .swiper-slide p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15%;
+    color: #000000;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .content4 h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .content4 #lock {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .content4 .dial {
+    width: 32px;
+    height: 80px;
+    border: 3px solid rgb(165, 152, 92);
+    border-radius: 5px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .content4 .dial .number {
+    margin: 0;
+  }
+  .guess-button {
+    background: url(images/submit-1.1.png) no-repeat 0 top;
+    background-size: contain;
+    width: 300px;
+  }
+  .guess-button:hover {
+    background: url(images/submit-2.png) no-repeat 0 top;
+    background-size: contain;
+    width: 300px;
+  }
+  .divider {
+    position: relative;
+    bottom: -35px;
+    background-image: url(images/divider-md.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+  }
 }

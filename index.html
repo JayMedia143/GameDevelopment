@@ -426,14 +426,64 @@
     <script>
       function toggleImageVisibility() {
         var image = document.getElementById("myImage");
+        var div = document.getElementById("content2-background");
+        var guide2 = document.getElementById("guide2-img");
+        var guide3 = document.getElementById("guide3-img");
+        var mediaQuery = window.matchMedia("(max-width: 600px)");
+        var mediaQuery1 = window.matchMedia("(min-width: 600px)");
+
+        if (mediaQuery.matches) {
+          if (div.style.height === "650px") {
+            div.style.height = "450px";
+          } else {
+            div.style.height = "650px";
+          }
+
+          if (guide2.style.top === "1840px") {
+            guide2.style.top = "1640px";
+          } else {
+            guide2.style.top = "1840px";
+          }
+
+          if (guide3.style.top === "2210px") {
+            guide3.style.top = "2010px";
+          } else {
+            guide3.style.top = "2210px";
+          }
+        }
+        if (mediaQuery1.matches) {
+          if (
+            div.style.height === "1000px" &&
+            div.style.backgroundRepeat === "repeat-y" &&
+            div.style.backgroundSize === "contain"
+          ) {
+            div.style.backgroundRepeat = "no-repeat";
+            div.style.height = "490px";
+            div.style.backgroundSize = "cover";
+          } else {
+            div.style.height = "1000px";
+            div.style.backgroundRepeat = "repeat-y";
+            div.style.backgroundSize = "contain";
+          }
+          if (guide2.style.top === "1840px") {
+            guide2.style.top = "1300px";
+          } else {
+            guide2.style.top = "1840px";
+          }
+          if (guide3.style.top === "2540px") {
+            guide3.style.top = "2020px";
+          } else {
+            guide3.style.top = "2540px";
+          }
+        }
+
         if (image.classList.contains("hidden")) {
           image.classList.remove("hidden");
           image.classList.add("visible");
         } else {
           image.classList.remove("visible");
           image.classList.add("hidden");
-        }
-        var div = document.getElementById("content2-background");
+        } /*---- error data
         if (
           div.style.height === "1000px" &&
           div.style.backgroundRepeat === "repeat-y" &&
@@ -447,18 +497,16 @@
           div.style.backgroundRepeat = "repeat-y";
           div.style.backgroundSize = "contain";
         }
-        var div = document.getElementById("guide2-img");
-        if (div.style.top === "1840px") {
-          div.style.top = "1300px";
+        if (guide2.style.top === "1840px") {
+          guide2.style.top = "1300px";
         } else {
-          div.style.top = "1840px";
+          guide2.style.top = "1840px";
         }
-        var div = document.getElementById("guide3-img");
-        if (div.style.top === "2540px") {
-          div.style.top = "2020px";
+        if (guide3.style.top === "2540px") {
+          guide3.style.top = "2020px";
         } else {
-          div.style.top = "2540px";
-        }
+          guide3.style.top = "2540px";
+        }----*/
       }
     </script>
 
