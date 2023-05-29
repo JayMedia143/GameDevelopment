@@ -394,3 +394,15 @@ input[type="text"] {
   background-repeat: no-repeat;
   height: 100px;
 }
+@media (max-width: 600px) {
+  .start-button {
+    background: url(images/btn-lg-play-1.png) no-repeat 0 top;
+    background-size: contain;
+    width: 250px;
+  }
+  .start-button:hover {
+    background: url(images/btn-lg-play-2.png) no-repeat 0 top;
+    background-size: contain;
+    width: 250px;
+  }
+}
