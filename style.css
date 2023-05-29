@@ -469,8 +469,8 @@ input[type="text"] {
   }
   .guide2-img {
     position: absolute;
-    right: -117px;
-    top: 1395px;
+    right: -125px;
+    top: 1410px;
     z-index: 9;
   }
   .guide2-img img {
@@ -480,7 +480,7 @@ input[type="text"] {
   .guide3-img {
     position: absolute;
     right: -170px;
-    top: 1715px;
+    top: 1740px;
     z-index: 9;
   }
   .guide3-img img {
